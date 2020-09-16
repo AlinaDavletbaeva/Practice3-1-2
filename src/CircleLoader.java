@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Loader {
+public class CircleLoader {
     public static void main (String[] args)
     {
         Circle a = new Circle();
@@ -7,13 +7,11 @@ public class Loader {
         System.out.print("Введите номер окружности: ");
         a.setNumber (input.nextInt());
         System.out.print("Введите радиус окружности: ");
-        a.setRadius(input.nextInt());
-        System.out.print("Длина окружности: ");
-        a.getLength();
+        a.setRadius(input.nextFloat());
+        System.out.println("Длина окружности: "+ a.getLength());
+        System.out.println("Площадь окружности: "+ a.getArea());
 
-
-        System.out.println(a);
         System.out.println();
-        // System.out.println(a);
+
     }
 }

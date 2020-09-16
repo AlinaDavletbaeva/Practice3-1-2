@@ -33,11 +33,12 @@ public class Circle {
        this.area=area;
    }*/
 //desc area
-    public float setArea(float area){
-        area= (float) (radius* radius *3.14);
+    public void setArea(float area){
+        this.area = area;
+    }
+    public float getArea(){
+        area= (float) (radius * radius * 3.14);
         return area;
     }
-   public void getArea(){
-        this.area=area;
-    }
+
 }
